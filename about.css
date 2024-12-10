@@ -1,3 +1,49 @@
+.tab{
+    background-color: lightgray;
+    border-radius: 20px;
+}
+body{
+    background-color: #f3f3f3;
+}
+body a:visited{
+  color: #000;
+}
+.hover:hover{
+  background-color: #FABC3F;
+  transition: all 1s;
+}
+
+.tab{
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+}
+.tab a {
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.tab div{
+  padding:15px;
+  cursor: pointer;
+
+}
+.button{
+  height: 40px;
+  border-radius: 20px;
+  background-color: #E5E1DA;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: #f4d58d;
+  transition: all 1s;
+}
+
+
 .logo{
     height:20em;
     width:93em;
