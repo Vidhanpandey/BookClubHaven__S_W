@@ -4,6 +4,14 @@
     padding: 0;
     box-sizing: border-box;
   }
+  .button{
+    height: 60px;
+    width: 120px;
+    border-radius: 5rem;
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+  }
   
   html {
     font-size: 16px;

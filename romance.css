@@ -3,6 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+.button{
+    z-index: 1;
+    height: 60px;
+    width: 120px;
+    border-radius: 5rem;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+  }
 
 body {
     font-family: 'Poppins', sans-serif;
