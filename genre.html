@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Genres</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="genre.css">
+</head>
+<body>
+  <!-- Background -->
+  <div id="background"></div>
+
+  <!-- Header Section -->
+  <header class="header">
+    <h1 class="title">Discover Book Genres</h1>
+    <p class="subtitle">Dive into worlds of knowledge, fantasy, and inspiration.</p>
+  </header>
+
+  <!-- Genre Section -->
+  <main class="content">
+    <section class="genre-section">
+      <h2 class="section-title">Our Top Genres</h2>
+      <div class="genre-grid">
+        <div class="genre-card" style="--border-color: #FF6B6B;">
+          <h2>Fiction</h2>
+          <p>Explore imaginative tales and gripping narratives.</p>
+        </div>
+        <div class="genre-card" style="--border-color: #4CAF50;">
+          <h2>Non-Fiction</h2>
+          <p>Learn about the world and expand your knowledge.</p>
+        </div>
+        <div class="genre-card" style="--border-color: #2196F3;">
+          <h2>Science Fiction</h2>
+          <p>Dive into futuristic concepts and advanced ideas.</p>
+        </div>
+        <div class="genre-card" style="--border-color: #9C27B0;">
+          <h2>Romance</h2>
+          <p>Dive into the World of Love and Passion – Where hearts entwine, stories bloom, and emotions run wild. Explore romance like never before!</p>
+        </div>
+        <div class="genre-card" style="--border-color: #FFC107;">
+          <h2>History</h2>
+          <p>Travel through time with stories of the past.</p>
+        </div>
+        <div class="genre-card" style="--border-color: #FF5722;">
+          <h2>Biographies</h2>
+          <p>Get inspired by the lives of remarkable individuals.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--  Quote sectiomn h ye -->
+    <section class="quote-section">
+      <blockquote>
+        "A reader lives a thousand lives before he dies. The man who never reads lives only one." – George R.R. Martin
+      </blockquote>
+    </section>
+
+    <!-- Testimonials ke liye -->
+    <section class="testimonial-section">
+      <h2 class="section-title">What Our Readers Say</h2>
+      <div class="testimonial">
+        <p>"This platform introduced me to genres I never knew I’d love. A game-changer for book enthusiasts!"</p>
+        <span>- Alex Morgan</span>
+      </div>
+      <div class="testimonial">
+        <p>"The variety here is incredible. I found everything from sci-fi classics to inspiring biographies."</p>
+        <span>- Priya Kapoor</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Book Club Haven. Crafted with passion by Vidhan,Aditya and Vansh</p>
+  </footer>
+
+  <!-- JavaScript for Smooth Scroll -->
+  <script>
+    // Smooth scrolling 
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    });
+
+    //  animations to genre cards on scroll for upwards type anuimation cool hoga ye
+    const genreCards = document.querySelectorAll(".genre-card");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+        }
+      });
+    });
+
+    genreCards.forEach((card) => observer.observe(card));
+  </script>
+</body>
+</html>
