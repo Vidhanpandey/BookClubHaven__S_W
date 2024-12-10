@@ -51,7 +51,6 @@ Icons from Font Awesome.
 License
 This project is free to use and modify for educational or non-commercial purposes. Attribution to the original creator is appreciated.
 
-This README provides clear and concise information about the project, its purpose, and how to run it. It also highlights future enhancements and credits for external resources. You can tailor it further based on your specific requirements.
 
 
 
