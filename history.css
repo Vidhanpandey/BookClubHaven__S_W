@@ -1,0 +1,136 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: #111; 
+  }
+  
+  
+  .background-video video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(30%);
+  }
+  
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.2); 
+    backdrop-filter: blur(3px); 
+    color: #fff;
+    position: relative;
+  }
+  
+  header .header-content h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  header .header-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+   
+  
+  header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #66fcf1;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #c5c6c7;
+  }
+  
+  
+  main {
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  .book-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .book-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .book-card h2 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #66fcf1;
+  }
+  
+  .book-card p {
+    font-size: 1rem;
+    color: #c5c6c7;
+  }
+  
+  .book-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  }
+  
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    color: #c5c6c7;
+    font-size: 0.9rem;
+    margin-top: 40px;
+  }
+  
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .book-card {
+    animation: fadeIn 0.8s ease-out;
+  }
+   
