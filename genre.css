@@ -8,6 +8,10 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   background-image: url(bg-genre.jpg);
+
+}
+body a {
+  color: #fff;
 }
 body a:visited{
   color: #fff;

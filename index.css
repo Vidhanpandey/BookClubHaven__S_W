@@ -2,6 +2,9 @@ body{
   background-color: #EBF1FC;
 
 }
+body a{
+  color: black;
+}
 body a:visited{
   color: #000;
 }
